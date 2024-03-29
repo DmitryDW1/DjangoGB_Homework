@@ -1,0 +1,192 @@
+INFO 2024-03-29 18:21:10,754 autoreload 6780 11052 Watching for file changes with StatReloader
+INFO 2024-03-29 18:22:08,108 autoreload 11588 7780 Watching for file changes with StatReloader
+INFO 2024-03-29 18:22:39,042 autoreload 3848 17232 Watching for file changes with StatReloader
+INFO 2024-03-29 18:22:46,707 basehttp 3848 2160 "GET / HTTP/1.1" 200 23
+INFO 2024-03-29 18:24:00,180 autoreload 3848 17232 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 18:24:02,150 autoreload 1072 16700 Watching for file changes with StatReloader
+INFO 2024-03-29 19:54:54,493 autoreload 1344 3292 Watching for file changes with StatReloader
+WARNING 2024-03-29 19:54:59,491 log 1344 15400 Not Found: /favicon.ico
+WARNING 2024-03-29 19:54:59,493 basehttp 1344 15400 "GET /favicon.ico HTTP/1.1" 404 2441
+INFO 2024-03-29 19:55:01,515 basehttp 1344 15400 "GET / HTTP/1.1" 200 1620
+INFO 2024-03-29 19:55:23,916 basehttp 1344 15400 "GET /about/ HTTP/1.1" 200 1483
+INFO 2024-03-29 19:57:08,513 autoreload 1344 3292 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 19:57:10,677 autoreload 9016 9852 Watching for file changes with StatReloader
+INFO 2024-03-29 19:58:40,773 autoreload 9016 9852 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 19:58:42,830 autoreload 7408 10292 Watching for file changes with StatReloader
+INFO 2024-03-29 19:59:43,418 autoreload 7408 10292 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 19:59:45,540 autoreload 4504 13208 Watching for file changes with StatReloader
+INFO 2024-03-29 19:59:54,763 basehttp 4504 9728 "GET / HTTP/1.1" 200 933
+INFO 2024-03-29 20:01:40,663 autoreload 4504 13208 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:01:42,757 autoreload 16956 7352 Watching for file changes with StatReloader
+INFO 2024-03-29 20:05:53,055 autoreload 16956 7352 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:05:55,189 autoreload 3708 14592 Watching for file changes with StatReloader
+INFO 2024-03-29 20:07:34,676 autoreload 3708 14592 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:07:36,767 autoreload 2776 16516 Watching for file changes with StatReloader
+INFO 2024-03-29 20:07:40,828 basehttp 2776 8888 "GET / HTTP/1.1" 200 1192
+INFO 2024-03-29 20:07:58,860 autoreload 2776 16516 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:08:00,990 autoreload 15008 10908 Watching for file changes with StatReloader
+INFO 2024-03-29 20:08:01,464 basehttp 15008 10716 "GET / HTTP/1.1" 200 1209
+INFO 2024-03-29 20:10:20,136 autoreload 15008 10908 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:10:22,140 autoreload 19416 15648 Watching for file changes with StatReloader
+INFO 2024-03-29 20:13:29,664 autoreload 19416 15648 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:13:31,581 autoreload 7752 18936 Watching for file changes with StatReloader
+INFO 2024-03-29 20:13:37,387 basehttp 7752 19364 "GET / HTTP/1.1" 200 1258
+WARNING 2024-03-29 20:13:37,540 log 7752 19364 Not Found: /.img/logo.png
+WARNING 2024-03-29 20:13:37,542 basehttp 7752 19364 "GET /.img/logo.png HTTP/1.1" 404 2447
+INFO 2024-03-29 20:13:45,997 autoreload 7752 18936 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:13:47,913 autoreload 15480 18576 Watching for file changes with StatReloader
+INFO 2024-03-29 20:13:50,478 basehttp 15480 10284 "GET / HTTP/1.1" 200 1257
+WARNING 2024-03-29 20:13:50,613 log 15480 10284 Not Found: /img/logo.png
+WARNING 2024-03-29 20:13:50,615 basehttp 15480 10284 "GET /img/logo.png HTTP/1.1" 404 2444
+INFO 2024-03-29 20:14:19,864 autoreload 15480 18576 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:14:21,851 autoreload 19424 10508 Watching for file changes with StatReloader
+INFO 2024-03-29 20:14:24,205 basehttp 19424 12324 "GET / HTTP/1.1" 200 1269
+WARNING 2024-03-29 20:14:24,352 log 19424 12324 Not Found: /..myproject/img/logo.png
+WARNING 2024-03-29 20:14:24,354 basehttp 19424 12324 "GET /..myproject/img/logo.png HTTP/1.1" 404 2480
+INFO 2024-03-29 20:14:29,662 autoreload 19424 10508 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:14:31,650 autoreload 1544 16656 Watching for file changes with StatReloader
+INFO 2024-03-29 20:14:34,474 basehttp 1544 14488 "GET / HTTP/1.1" 200 1270
+WARNING 2024-03-29 20:14:34,601 log 1544 14488 Not Found: /myproject/img/logo.png
+WARNING 2024-03-29 20:14:34,603 basehttp 1544 14488 "GET /myproject/img/logo.png HTTP/1.1" 404 2474
+INFO 2024-03-29 20:14:49,271 autoreload 1544 16656 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:14:51,200 autoreload 18996 3756 Watching for file changes with StatReloader
+INFO 2024-03-29 20:14:53,374 basehttp 18996 17184 "GET / HTTP/1.1" 200 1257
+WARNING 2024-03-29 20:14:53,512 log 18996 17184 Not Found: /img/logo.png
+WARNING 2024-03-29 20:14:53,514 basehttp 18996 17184 "GET /img/logo.png HTTP/1.1" 404 2444
+INFO 2024-03-29 20:14:58,984 autoreload 18996 3756 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:15:00,958 autoreload 11892 10452 Watching for file changes with StatReloader
+INFO 2024-03-29 20:15:05,155 basehttp 11892 13844 "GET / HTTP/1.1" 200 1258
+WARNING 2024-03-29 20:15:05,289 log 11892 13844 Not Found: /.img/logo.png
+WARNING 2024-03-29 20:15:05,291 basehttp 11892 13844 "GET /.img/logo.png HTTP/1.1" 404 2447
+INFO 2024-03-29 20:15:26,159 autoreload 11892 10452 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:15:28,132 autoreload 12624 6912 Watching for file changes with StatReloader
+INFO 2024-03-29 20:15:30,121 basehttp 12624 16908 "GET / HTTP/1.1" 200 1257
+WARNING 2024-03-29 20:15:30,264 log 12624 16908 Not Found: /img/logo.png
+WARNING 2024-03-29 20:15:30,266 basehttp 12624 16908 "GET /img/logo.png HTTP/1.1" 404 2444
+INFO 2024-03-29 20:16:13,566 autoreload 12624 6912 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:16:15,547 autoreload 18788 18684 Watching for file changes with StatReloader
+INFO 2024-03-29 20:16:17,849 basehttp 18788 3392 "GET / HTTP/1.1" 200 1276
+WARNING 2024-03-29 20:16:17,990 log 18788 3392 Not Found: /myproject/shop_app/img/logo.png
+WARNING 2024-03-29 20:16:17,992 basehttp 18788 3392 "GET /myproject/shop_app/img/logo.png HTTP/1.1" 404 2501
+INFO 2024-03-29 20:16:38,663 autoreload 18788 18684 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:16:40,727 autoreload 16256 8868 Watching for file changes with StatReloader
+INFO 2024-03-29 20:16:42,541 basehttp 16256 12600 "GET / HTTP/1.1" 200 1279
+WARNING 2024-03-29 20:16:42,679 log 16256 12600 Not Found: /myproject/shop_app/img/logo.png
+WARNING 2024-03-29 20:16:42,681 basehttp 16256 12600 "GET /myproject/shop_app/img/logo.png HTTP/1.1" 404 2501
+INFO 2024-03-29 20:16:47,777 autoreload 16256 8868 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:16:49,805 autoreload 10996 11512 Watching for file changes with StatReloader
+INFO 2024-03-29 20:16:51,896 basehttp 10996 11492 "GET / HTTP/1.1" 200 1278
+WARNING 2024-03-29 20:16:52,034 log 10996 11492 Not Found: /..myproject/shop_app/img/logo.png
+WARNING 2024-03-29 20:16:52,037 basehttp 10996 11492 "GET /..myproject/shop_app/img/logo.png HTTP/1.1" 404 2507
+INFO 2024-03-29 20:17:06,517 autoreload 10996 11512 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:17:08,507 autoreload 2820 6580 Watching for file changes with StatReloader
+INFO 2024-03-29 20:17:13,711 basehttp 2820 16988 "GET / HTTP/1.1" 200 1253
+WARNING 2024-03-29 20:17:13,842 log 2820 16988 Not Found: /logo.png
+WARNING 2024-03-29 20:17:13,844 basehttp 2820 16988 "GET /logo.png HTTP/1.1" 404 2432
+INFO 2024-03-29 20:18:24,184 autoreload 12324 18596 Watching for file changes with StatReloader
+INFO 2024-03-29 20:18:26,748 basehttp 12324 860 "GET / HTTP/1.1" 200 1253
+WARNING 2024-03-29 20:18:26,880 log 12324 860 Not Found: /logo.png
+WARNING 2024-03-29 20:18:26,882 basehttp 12324 860 "GET /logo.png HTTP/1.1" 404 2432
+INFO 2024-03-29 20:20:03,556 autoreload 12324 18596 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:20:05,532 autoreload 800 19192 Watching for file changes with StatReloader
+INFO 2024-03-29 20:20:07,704 basehttp 800 13688 "GET / HTTP/1.1" 200 1258
+WARNING 2024-03-29 20:20:07,848 log 800 13688 Not Found: /logo.png
+WARNING 2024-03-29 20:20:07,851 basehttp 800 13688 "GET /logo.png HTTP/1.1" 404 2432
+INFO 2024-03-29 20:21:00,956 autoreload 800 19192 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:21:02,896 autoreload 18896 18860 Watching for file changes with StatReloader
+INFO 2024-03-29 20:21:04,943 basehttp 18896 9064 "GET / HTTP/1.1" 200 1268
+WARNING 2024-03-29 20:21:05,093 log 18896 9064 Not Found: /.shop_app/logo.png
+WARNING 2024-03-29 20:21:05,095 basehttp 18896 9064 "GET /.shop_app/logo.png HTTP/1.1" 404 2462
+INFO 2024-03-29 20:21:54,995 autoreload 18896 18860 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:21:57,014 autoreload 12592 8072 Watching for file changes with StatReloader
+INFO 2024-03-29 20:23:18,502 autoreload 12592 8072 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:23:20,381 autoreload 19004 3200 Watching for file changes with StatReloader
+INFO 2024-03-29 20:23:22,298 basehttp 19004 14948 "GET / HTTP/1.1" 200 852
+WARNING 2024-03-29 20:23:22,467 log 19004 14948 Not Found: /logo.png
+WARNING 2024-03-29 20:23:22,469 basehttp 19004 14948 "GET /logo.png HTTP/1.1" 404 2432
+INFO 2024-03-29 20:23:33,106 autoreload 19004 3200 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:23:35,143 autoreload 2820 15792 Watching for file changes with StatReloader
+INFO 2024-03-29 20:23:35,506 basehttp 2820 6584 "GET / HTTP/1.1" 200 1258
+WARNING 2024-03-29 20:23:35,654 log 2820 6584 Not Found: /logo.png
+WARNING 2024-03-29 20:23:35,657 basehttp 2820 6584 "GET /logo.png HTTP/1.1" 404 2432
+INFO 2024-03-29 20:24:27,412 autoreload 2820 15792 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:24:29,374 autoreload 12276 8172 Watching for file changes with StatReloader
+INFO 2024-03-29 20:24:38,562 autoreload 12276 8172 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:24:40,590 autoreload 7284 6660 Watching for file changes with StatReloader
+INFO 2024-03-29 20:24:47,522 autoreload 7284 6660 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:24:49,468 autoreload 14408 1868 Watching for file changes with StatReloader
+INFO 2024-03-29 20:24:51,940 basehttp 14408 15136 "GET / HTTP/1.1" 200 1280
+WARNING 2024-03-29 20:24:52,082 log 14408 15136 Not Found: /logo.png
+WARNING 2024-03-29 20:24:52,084 basehttp 14408 15136 "GET /logo.png HTTP/1.1" 404 2432
+INFO 2024-03-29 20:24:54,600 basehttp 14408 15136 "GET / HTTP/1.1" 200 1280
+WARNING 2024-03-29 20:24:54,729 log 14408 15136 Not Found: /logo.png
+WARNING 2024-03-29 20:24:54,731 basehttp 14408 15136 "GET /logo.png HTTP/1.1" 404 2432
+INFO 2024-03-29 20:25:19,185 autoreload 14408 1868 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:25:21,244 autoreload 18360 16732 Watching for file changes with StatReloader
+INFO 2024-03-29 20:27:33,333 autoreload 18360 16732 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:27:35,379 autoreload 15796 7264 Watching for file changes with StatReloader
+INFO 2024-03-29 20:27:41,439 basehttp 15796 16640 "GET / HTTP/1.1" 200 1299
+WARNING 2024-03-29 20:27:41,572 log 15796 16640 Not Found: /{% static
+WARNING 2024-03-29 20:27:41,574 basehttp 15796 16640 "GET /%7B%%20static HTTP/1.1" 404 2441
+INFO 2024-03-29 20:28:07,404 autoreload 15796 7264 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:28:09,380 autoreload 15432 17812 Watching for file changes with StatReloader
+INFO 2024-03-29 20:28:09,750 basehttp 15432 14080 "GET / HTTP/1.1" 200 1274
+WARNING 2024-03-29 20:28:09,898 log 15432 14080 Not Found: /{% static
+WARNING 2024-03-29 20:28:09,900 basehttp 15432 14080 "GET /%7B%%20static HTTP/1.1" 404 2441
+INFO 2024-03-29 20:28:41,908 autoreload 15432 17812 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:28:43,859 autoreload 11888 11800 Watching for file changes with StatReloader
+INFO 2024-03-29 20:28:52,906 basehttp 11888 4576 "GET / HTTP/1.1" 200 1292
+WARNING 2024-03-29 20:28:53,064 log 11888 4576 Not Found: /{% static
+WARNING 2024-03-29 20:28:53,066 basehttp 11888 4576 "GET /%7B%%20static HTTP/1.1" 404 2441
+INFO 2024-03-29 20:30:44,838 basehttp 11888 5648 "GET / HTTP/1.1" 200 1292
+WARNING 2024-03-29 20:30:44,920 log 11888 5648 Not Found: /{% static
+WARNING 2024-03-29 20:30:44,922 basehttp 11888 5648 "GET /%7B%%20static HTTP/1.1" 404 2441
+INFO 2024-03-29 20:33:19,625 autoreload 11888 11800 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:33:20,669 autoreload 8316 3456 Watching for file changes with StatReloader
+INFO 2024-03-29 20:33:25,485 basehttp 8316 9956 "GET / HTTP/1.1" 200 1280
+WARNING 2024-03-29 20:33:25,578 log 8316 9956 Not Found: /{{STATIC_URL}}images/logo.png
+WARNING 2024-03-29 20:33:25,579 basehttp 8316 9956 "GET /%7B%7BSTATIC_URL%7D%7Dimages/logo.png HTTP/1.1" 404 2503
+INFO 2024-03-29 20:33:28,043 basehttp 8316 9956 "GET / HTTP/1.1" 200 1280
+WARNING 2024-03-29 20:33:28,112 log 8316 9956 Not Found: /{{STATIC_URL}}images/logo.png
+WARNING 2024-03-29 20:33:28,113 basehttp 8316 9956 "GET /%7B%7BSTATIC_URL%7D%7Dimages/logo.png HTTP/1.1" 404 2503
+INFO 2024-03-29 20:33:59,401 autoreload 8316 3456 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:34:00,397 autoreload 19424 19448 Watching for file changes with StatReloader
+INFO 2024-03-29 20:34:02,526 basehttp 19424 11192 "GET / HTTP/1.1" 200 1271
+WARNING 2024-03-29 20:34:02,598 log 19424 11192 Not Found: /{{STATIC_URL}}images/logo.png
+WARNING 2024-03-29 20:34:02,599 basehttp 19424 11192 "GET /%7B%7BSTATIC_URL%7D%7Dimages/logo.png HTTP/1.1" 404 2503
+INFO 2024-03-29 20:35:37,568 autoreload 19424 19448 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:35:38,555 autoreload 15012 9964 Watching for file changes with StatReloader
+INFO 2024-03-29 20:36:35,578 autoreload 15012 9964 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:36:36,412 autoreload 17224 1140 Watching for file changes with StatReloader
+INFO 2024-03-29 20:36:42,957 basehttp 17224 17844 "GET / HTTP/1.1" 200 1296
+WARNING 2024-03-29 20:36:43,040 log 17224 17844 Not Found: /{% static 'images/logo.png' %}
+WARNING 2024-03-29 20:36:43,041 basehttp 17224 17844 "GET /%7B%%20static%20'images/logo.png'%20%%7D HTTP/1.1" 404 2542
+INFO 2024-03-29 20:37:27,490 autoreload 17224 1140 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:37:28,346 autoreload 7544 7060 Watching for file changes with StatReloader
+INFO 2024-03-29 20:37:32,570 basehttp 7544 18216 "GET / HTTP/1.1" 200 1297
+WARNING 2024-03-29 20:37:32,672 log 7544 18216 Not Found: /{% static 'images/logo.png' %}
+WARNING 2024-03-29 20:37:32,674 basehttp 7544 18216 "GET /%7B%%20static%20'images/logo.png'%20%%7D HTTP/1.1" 404 2542
+INFO 2024-03-29 20:37:34,090 basehttp 7544 18216 "GET / HTTP/1.1" 200 1297
+WARNING 2024-03-29 20:37:34,159 log 7544 18216 Not Found: /{% static 'images/logo.png' %}
+WARNING 2024-03-29 20:37:34,160 basehttp 7544 18216 "GET /%7B%%20static%20'images/logo.png'%20%%7D HTTP/1.1" 404 2542
+INFO 2024-03-29 20:37:51,274 autoreload 7544 7060 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:37:52,173 autoreload 18344 17504 Watching for file changes with StatReloader
+INFO 2024-03-29 20:37:52,437 basehttp 18344 11076 "GET / HTTP/1.1" 200 1271
+WARNING 2024-03-29 20:37:52,520 log 18344 11076 Not Found: /{% static 'images/logo.png' %}
+WARNING 2024-03-29 20:37:52,524 basehttp 18344 11076 "GET /%7B%%20static%20'images/logo.png'%20%%7D HTTP/1.1" 404 2542
+INFO 2024-03-29 20:44:22,509 autoreload 18344 17504 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:44:23,528 autoreload 16136 4156 Watching for file changes with StatReloader
+INFO 2024-03-29 20:45:36,860 autoreload 16136 4156 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:45:37,713 autoreload 11516 15476 Watching for file changes with StatReloader
+INFO 2024-03-29 20:46:34,680 autoreload 11516 15476 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:46:35,553 autoreload 6584 17988 Watching for file changes with StatReloader
+INFO 2024-03-29 20:46:39,061 basehttp 6584 4084 "GET / HTTP/1.1" 200 1219
+INFO 2024-03-29 20:46:44,954 basehttp 6584 4084 "GET /about/ HTTP/1.1" 200 1119
+INFO 2024-03-29 20:51:11,099 autoreload 6584 17988 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:51:11,951 autoreload 15696 10732 Watching for file changes with StatReloader
+INFO 2024-03-29 20:51:14,092 basehttp 15696 1404 "GET /about/ HTTP/1.1" 200 1448
+INFO 2024-03-29 20:52:32,199 autoreload 15696 10732 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:52:33,141 autoreload 16752 18160 Watching for file changes with StatReloader
+INFO 2024-03-29 20:53:35,377 autoreload 16752 18160 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-03-29 20:53:36,356 autoreload 9452 17560 Watching for file changes with StatReloader
+INFO 2024-03-29 20:53:37,601 basehttp 9452 14420 "GET / HTTP/1.1" 200 1356
