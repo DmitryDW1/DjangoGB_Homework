@@ -1,101 +1,75 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 import logging
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
+from .models import Client, Order, Product
+from django.utils import timezone
 
 logger = logging.getLogger(__name__)
 
 def index(request):
-    html = """
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Мой первый Django-сайт</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                line-height: 1.5;
-                margin: 0;
-                padding: 20px;
-                background: linear-gradient(to bottom,  #cdeb8b 0%,#cdeb8b 100%);
-                
-            }
-            
-            h1 {
-                color: #333;
-            }
-            
-            p {
-                color: #777;
-
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Здравствуйте</h1>
-    
-        <h2>О сайте</h2>
-        
-        <p>
-            Это мой первый сайт, разработанный с помощью Django. Данный сайт является домашней работой по курсу "Фреймворк Django". Буду создавать интернет-магазин.<br> По мере развития проекта будут добавлятся страницы, переработан дизайн.
-        </p>
-    
-        <footer>
-        <p>&copy; Все права защищены. 2024</p>
-        </footer>
-    </body>
-    </html>
-    """
-    logger.info(f'посещение страницы index в: {datetime.now()}')
-    return HttpResponse(html)
+    '''
+    Главная страница сайта
+    '''
+    return render(request, 'shop_app/index.html')
 
 def about(request):
-    html = """<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Обо мне</title>
-</head>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                line-height: 1.5;
-                margin: 0;
-                padding: 20px;
-                background: linear-gradient(to bottom,  #cdeb8b 0%,#cdeb8b 100%);
-            }
-            
-            h1 {
-                color: #333;
-            }
-            
-            p {
-                color: #777;
-            }
-        </style>
-<body>
-    <header>
-        <h1>Здравствуйте! Меня зовут Дмитрий Деденев</h1>
-    </header>
+    '''
+    Страница с информацией об авторе сайта
+    '''
+    return render(request, 'shop_app/about.html')
 
-    <main>
-        <p>
-            Я студент GeekBrains. Учусь профессии "Разработчик". В данный момент прохожу курс специализации "Веб-разработка на Python".
-        </p>
-        <p>
-            Мне 42 года. Образование среднее-специальное. С компьютерной техникой дружу примерно лет с 5))). Начиналось всё с Радио-РК86, затем Spectrum, Profi, потом IBM-486 и так далее.
-        </p>
-    </main>
+def list_clients(request):
+    clients = Client.objects.all()
+    context = {
+        'title': 'Список клиентов',
+        'clients': clients
+        }
+    return render(request, 'shop_app/list_clients.html', context)
 
-    <footer>
-        <p>&copy; Все права защищены. 2024</p>
-    </footer>
-</body>
-</html>
-"""
-    logger.info(f'посещение страницы about в: {datetime.now()}')
-    return HttpResponse(html)
+def orders_client(request, client_id):
+    client = get_object_or_404(Client, pk=client_id)
+    orders = Order.objects.filter(customer=client).all()
+    context = {
+        'title': client.id,
+        'list': f'Имя: {client.name}',
+        'orders': orders,
+        'name': 'Список заказов клиента',
+        'count': len(orders),
+    }
+    
+    return render(request, 'shop_app/orders_client.html', context)
+
+def products_period(request, client_id):
+    client = get_object_or_404(Client, pk=client_id)
+    today = timezone.now().date()
+    week_ago = today - timedelta(days=7)
+    month_ago = today - timedelta(days=30)
+    year_ago = today - timedelta(days=365)
+
+    orders_week = Order.objects.filter(customer=client, registration_date__gte=week_ago)
+    orders_month = Order.objects.filter(customer=client, registration_date__gte=month_ago)
+    orders_year = Order.objects.filter(customer=client, registration_date__gte=year_ago)
+
+    products_week = set()
+    products_month = set()
+    products_year = set()
+
+    for order in orders_week:
+        products_week.update(order.products_in_order.all())
+
+    for order in orders_month:
+        products_month.update(order.products_in_order.all())
+
+    for order in orders_year:
+        products_year.update(order.products_in_order.all())
+
+    context = {
+        'title': 'Сортировка товаров по дате',
+        'client': client,
+        'products_week': products_week,
+        'products_month': products_month,
+        'products_year': products_year,
+    }
+    print(products_week)
+    return render(request, 'shop_app/products_period.html', context)

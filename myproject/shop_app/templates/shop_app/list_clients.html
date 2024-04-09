@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock title %}
+
+{% block content %}
+    {% for client in clients %}
+       Имя: {{ client.name }}<br>
+       E-mail: {{ client.email }}<br> 
+       Номер телефона: {{ client.phone_number }}<br> 
+       Адрес: {{ client.addres }}<br> 
+       Дата регистрации: {{ client.date_reg }}<br>
+       ---------------------------------------------<br>
+    {% endfor %}
+{% endblock content %}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}Сайт{% endblock %}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(to bottom,  #cdeb8b 0%,#cdeb8b 100%);   
+        }
+        h1 {color: #333;}
+        p {color: #777;}
+    </style>
+    <body>
+  </head>
+  <body>
+    {% block content %}
+        <p>Скоро тут появится текст...</p>
+    {% endblock %}
+  </body>
+  <footer>
+    <p>&copy; Все права защищены. 2024</p>
+    </footer>
+</html>

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock title %}
+
+{% block content %}
+    {{ name }}<br>
+    ---------------------------------<br>
+    Количество заказов: {{ count }}<br>
+    ---------------------------------<br>
+    {% for order in orders %}
+        ID заказа: {{ order.pk }}<br>
+        ++++++++++++++++++++<br>
+        {% for product in order.products_in_order.all %}
+            ID товара: {{ product.id }}<br>
+            Наименование: {{ product.name }}<br>
+            Описание: {{ product.description }}<br>
+            Цена: {{ product.price }}<br>
+            ++++++++++++++++++++<br>
+        {% endfor %}
+        Сумма заказа: {{ order.total_cost }}<br>
+        ----------------------------------------------<br>
+    {% endfor %}
+    
+    
+{% endblock content %}

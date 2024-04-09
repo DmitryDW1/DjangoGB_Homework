@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock title %}
+
+{% block content %}
+     <h2>Товары за 7 дней</h2>
+     ++++++++++++++++++++++++++++<br> 
+        {% for product in products_week %}
+            ID товара: {{ product.id }}<br>
+            Намиенование: {{ product.name }}<br>
+            Цена: {{ product.price }}<br>
+            -----------------------<br>
+        {% endfor%}
+    <h2>Товары за 30 дней</h2>
+    ++++++++++++++++++++++++++++<br> 
+        {% for product in products_month %}
+            ID товара: {{ product.id }}<br>
+            Намиенование: {{ product.name }}<br>
+            Цена: {{ product.price }}<br>
+            -----------------------<br>
+        {% endfor%}
+    <h2>Товары за 365 дней</h2>
+    ++++++++++++++++++++++++++++<br> 
+        {% for product in products_year %}
+            ID товара: {{ product.id }}<br>
+            Намиенование: {{ product.name }}<br>
+            Цена: {{ product.price }}<br>
+            -----------------------<br>
+        {% endfor%}
+{% endblock %}
