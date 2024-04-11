@@ -22,7 +22,8 @@ class Product(models.Model):
     description = models.TextField(max_length=500)
     price = models.DecimalField(decimal_places=2, max_digits=10)
     quantity = models.IntegerField(default=0)
-    date_of_addition = models.DateField()
+    date_of_addition = models.DateField(default=datetime.now)
+    photo = models.ImageField(upload_to='product_photos/', blank=True, null=True)
     
     def __str__(self) -> str:
         return f'ID: {self.id}\

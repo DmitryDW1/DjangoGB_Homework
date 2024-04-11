@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load bootstrap3 %}
+
+{% block title %}Создание товара{% endblock %}
+{% block content %}
+<h3>Создание товара</h3>
+
+{{ message }}
+<form method="post" enctype="multipart/form-data">
+    
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    {% buttons %}
+        <button type="submit" class="btn btn-primary">
+            {% bootstrap_icon "star" %} Submit
+        </button>
+    {% endbuttons %}
+</form>
+{% endblock %}

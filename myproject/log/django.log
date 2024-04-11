@@ -4542,3 +4542,764 @@ INFO 2024-04-10 00:34:24,691 autoreload 8452 6128 Watching for file changes with
 INFO 2024-04-10 00:34:24,997 basehttp 8452 6356 "GET /products_period/1/ HTTP/1.1" 200 16901
 INFO 2024-04-10 00:34:52,649 autoreload 8452 6128 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
 INFO 2024-04-10 00:34:53,557 autoreload 3360 3256 Watching for file changes with StatReloader
+INFO 2024-04-11 21:11:01,514 autoreload 8900 12688 Watching for file changes with StatReloader
+INFO 2024-04-11 21:11:31,976 basehttp 8900 23432 "GET /about/ HTTP/1.1" 200 1276
+WARNING 2024-04-11 21:11:47,767 log 8900 23432 Not Found: /product_update/4
+WARNING 2024-04-11 21:11:47,767 basehttp 8900 23432 "GET /product_update/4 HTTP/1.1" 404 3254
+INFO 2024-04-11 21:12:32,730 autoreload 8900 12688 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-11 21:12:34,177 autoreload 12912 8304 Watching for file changes with StatReloader
+WARNING 2024-04-11 21:12:34,683 log 12912 22108 Not Found: /product_update/4
+WARNING 2024-04-11 21:12:34,684 basehttp 12912 22108 "GET /product_update/4 HTTP/1.1" 404 3254
+WARNING 2024-04-11 21:12:37,922 log 12912 22108 Not Found: /product_update/4
+WARNING 2024-04-11 21:12:37,923 basehttp 12912 22108 "GET /product_update/4 HTTP/1.1" 404 3254
+WARNING 2024-04-11 21:13:03,214 log 12912 22108 Not Found: /product_period/
+WARNING 2024-04-11 21:13:03,216 basehttp 12912 22108 "GET /product_period/ HTTP/1.1" 404 3251
+INFO 2024-04-11 21:13:21,302 autoreload 16976 20708 Watching for file changes with StatReloader
+WARNING 2024-04-11 21:13:27,387 log 16976 23336 Not Found: /product_period/34
+WARNING 2024-04-11 21:13:27,389 basehttp 16976 23336 "GET /product_period/34 HTTP/1.1" 404 3257
+INFO 2024-04-11 21:13:45,734 basehttp 16976 23336 "GET /products_period/34 HTTP/1.1" 301 0
+WARNING 2024-04-11 21:13:45,782 log 16976 22832 Not Found: /products_period/34/
+WARNING 2024-04-11 21:13:45,783 basehttp 16976 22832 "GET /products_period/34/ HTTP/1.1" 404 3228
+INFO 2024-04-11 21:14:19,004 basehttp 16976 22832 "GET /orders_client/8 HTTP/1.1" 301 0
+ERROR 2024-04-11 21:14:19,719 log 16976 8928 Internal Server Error: /orders_client/8/
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: shop_app_product.photo
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py", line 42, in orders_client
+    return render(request, 'shop_app/orders_client.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\defaulttags.py", line 198, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: shop_app_product.photo
+ERROR 2024-04-11 21:14:19,758 basehttp 16976 8928 "GET /orders_client/8/ HTTP/1.1" 500 223346
+ERROR 2024-04-11 21:14:40,369 log 16976 8928 Internal Server Error: /orders_client/8/
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: shop_app_product.photo
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py", line 42, in orders_client
+    return render(request, 'shop_app/orders_client.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\defaulttags.py", line 198, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: shop_app_product.photo
+ERROR 2024-04-11 21:14:40,407 basehttp 16976 8928 "GET /orders_client/8/ HTTP/1.1" 500 223483
+INFO 2024-04-11 21:14:40,470 autoreload 16976 20708 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\models.py changed, reloading.
+INFO 2024-04-11 21:14:41,941 autoreload 20128 18220 Watching for file changes with StatReloader
+INFO 2024-04-11 21:15:01,797 autoreload 4748 17012 Watching for file changes with StatReloader
+INFO 2024-04-11 21:15:48,441 autoreload 15932 7464 Watching for file changes with StatReloader
+INFO 2024-04-11 21:16:11,746 autoreload 15932 7464 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-11 21:16:13,088 autoreload 7072 1524 Watching for file changes with StatReloader
+INFO 2024-04-11 21:16:16,941 basehttp 7072 10684 "GET /orders_client/8/ HTTP/1.1" 200 2224
+INFO 2024-04-11 21:16:55,693 autoreload 7072 1524 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\urls.py changed, reloading.
+INFO 2024-04-11 21:16:57,175 autoreload 11976 10964 Watching for file changes with StatReloader
+INFO 2024-04-11 21:17:00,234 autoreload 11976 10964 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-11 21:17:01,461 autoreload 18364 7772 Watching for file changes with StatReloader
+INFO 2024-04-11 21:17:03,050 autoreload 18364 7772 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\forms.py changed, reloading.
+INFO 2024-04-11 21:17:04,461 autoreload 20448 22216 Watching for file changes with StatReloader
+INFO 2024-04-11 21:17:08,185 autoreload 20448 22216 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\models.py changed, reloading.
+INFO 2024-04-11 21:17:09,415 autoreload 18604 23276 Watching for file changes with StatReloader
+INFO 2024-04-11 21:17:30,635 basehttp 18604 13028 "GET /product_update/8 HTTP/1.1" 301 0
+ERROR 2024-04-11 21:17:30,801 log 18604 18532 Internal Server Error: /product_update/8/
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: shop_app_product.photo
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py", line 80, in product_update
+    product = Product.objects.get(pk=product_id)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: shop_app_product.photo
+ERROR 2024-04-11 21:17:30,828 basehttp 18604 18532 "GET /product_update/8/ HTTP/1.1" 500 143192
+INFO 2024-04-11 21:18:49,913 autoreload 22748 20536 Watching for file changes with StatReloader
+INFO 2024-04-11 21:18:50,561 basehttp 22748 2140 "GET /product_update/8/ HTTP/1.1" 200 1597
+ERROR 2024-04-11 21:25:28,597 log 22748 6868 Internal Server Error: /product_update/8/
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py", line 86, in product_update
+    return redirect('get_product_by_id', success_message=success_message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'get_product_by_id' not found. 'get_product_by_id' is not a valid view function or pattern name.
+ERROR 2024-04-11 21:25:28,606 basehttp 22748 6868 "POST /product_update/8/ HTTP/1.1" 500 91807
+INFO 2024-04-11 21:31:22,250 autoreload 22748 20536 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-11 21:31:23,828 autoreload 17564 7616 Watching for file changes with StatReloader
+INFO 2024-04-11 21:31:42,681 autoreload 17564 7616 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-11 21:31:44,518 autoreload 9268 13952 Watching for file changes with StatReloader
+INFO 2024-04-11 21:32:07,828 autoreload 9268 13952 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-11 21:32:09,138 autoreload 10496 8484 Watching for file changes with StatReloader
+INFO 2024-04-11 21:33:07,176 autoreload 10496 8484 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-11 21:33:08,852 autoreload 352 22636 Watching for file changes with StatReloader
+INFO 2024-04-11 21:41:10,904 basehttp 352 18932 "POST /product_update/8/ HTTP/1.1" 200 1904
+INFO 2024-04-11 22:33:33,942 autoreload 10068 10052 Watching for file changes with StatReloader
+INFO 2024-04-11 22:34:13,696 basehttp 10068 13568 "GET /product_update/9 HTTP/1.1" 301 0
+ERROR 2024-04-11 22:34:13,905 log 10068 10284 Internal Server Error: /product_update/9/
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py", line 89, in product_update
+    return render(request, 'shop_app/product_update.html', {'form': form, 'message': message})
+                                                                                     ^^^^^^^
+UnboundLocalError: cannot access local variable 'message' where it is not associated with a value
+ERROR 2024-04-11 22:34:13,909 basehttp 10068 10284 "GET /product_update/9/ HTTP/1.1" 500 70339
+WARNING 2024-04-11 22:34:15,253 log 10068 10284 Not Found: /favicon.ico
+WARNING 2024-04-11 22:34:15,254 basehttp 10068 10284 "GET /favicon.ico HTTP/1.1" 404 3244
+INFO 2024-04-11 22:34:44,497 basehttp 10068 10284 "GET /product_update/3 HTTP/1.1" 301 0
+ERROR 2024-04-11 22:34:44,582 log 10068 9196 Internal Server Error: /product_update/3/
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py", line 89, in product_update
+    return render(request, 'shop_app/product_update.html', {'form': form, 'message': message})
+                                                                                     ^^^^^^^
+UnboundLocalError: cannot access local variable 'message' where it is not associated with a value
+ERROR 2024-04-11 22:34:44,586 basehttp 10068 9196 "GET /product_update/3/ HTTP/1.1" 500 70339
+INFO 2024-04-11 22:35:30,148 autoreload 13248 11484 Watching for file changes with StatReloader
+ERROR 2024-04-11 22:35:32,740 log 13248 13600 Internal Server Error: /product_update/3/
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py", line 89, in product_update
+    return render(request, 'shop_app/product_update.html', {'form': form, 'message': message})
+                                                                                     ^^^^^^^
+UnboundLocalError: cannot access local variable 'message' where it is not associated with a value
+ERROR 2024-04-11 22:35:32,748 basehttp 13248 13600 "GET /product_update/3/ HTTP/1.1" 500 70476
+WARNING 2024-04-11 22:36:15,694 log 13248 13600 Not Found: /seminar_4/all_games
+WARNING 2024-04-11 22:36:15,695 basehttp 13248 13600 "GET /seminar_4/all_games HTTP/1.1" 404 3268
+INFO 2024-04-11 22:36:23,594 basehttp 13248 13600 "GET /about HTTP/1.1" 301 0
+INFO 2024-04-11 22:36:23,720 basehttp 13248 14968 "GET /about/ HTTP/1.1" 200 1276
+INFO 2024-04-11 22:36:25,359 basehttp 13248 14968 "GET /about/ HTTP/1.1" 200 1276
+WARNING 2024-04-11 22:36:36,055 log 13248 14968 Not Found: /index
+WARNING 2024-04-11 22:36:36,057 basehttp 13248 14968 "GET /index HTTP/1.1" 404 3226
+INFO 2024-04-11 22:36:42,183 basehttp 13248 14968 "GET / HTTP/1.1" 200 1055
+INFO 2024-04-11 22:37:03,337 basehttp 13248 14968 "GET /products_period/5 HTTP/1.1" 301 0
+INFO 2024-04-11 22:37:03,419 basehttp 13248 5696 "GET /products_period/5/ HTTP/1.1" 200 5501
+WARNING 2024-04-11 22:37:14,635 log 13248 5696 Not Found: /products_update/9
+WARNING 2024-04-11 22:37:14,636 basehttp 13248 5696 "GET /products_update/9 HTTP/1.1" 404 3262
+ERROR 2024-04-11 22:37:28,295 log 13248 5696 Internal Server Error: /product_update/9/
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py", line 89, in product_update
+    return render(request, 'shop_app/product_update.html', {'form': form, 'message': message})
+                                                                                     ^^^^^^^
+UnboundLocalError: cannot access local variable 'message' where it is not associated with a value
+ERROR 2024-04-11 22:37:28,300 basehttp 13248 5696 "GET /product_update/9/ HTTP/1.1" 500 70339
+INFO 2024-04-11 22:39:14,512 autoreload 13248 11484 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-11 22:39:15,629 autoreload 13916 1568 Watching for file changes with StatReloader
+INFO 2024-04-11 22:39:18,418 basehttp 13916 13400 "GET /product_update/9/ HTTP/1.1" 200 1602
+INFO 2024-04-11 22:39:46,929 basehttp 13916 13400 "GET /product_update/9/ HTTP/1.1" 200 1602
+INFO 2024-04-11 22:39:47,474 autoreload 13916 1568 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-11 22:39:48,686 autoreload 15228 12236 Watching for file changes with StatReloader
+ERROR 2024-04-11 22:39:49,196 log 15228 13124 Internal Server Error: /product_update/9/
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py", line 89, in product_update
+    return render(request, 'shop_app/product_update.html', {'form': form, 'message': message})
+                                                                                     ^^^^^^^
+UnboundLocalError: cannot access local variable 'message' where it is not associated with a value
+ERROR 2024-04-11 22:39:49,201 basehttp 15228 13124 "GET /product_update/9/ HTTP/1.1" 500 70476
+ERROR 2024-04-11 22:41:32,080 log 15228 13124 Internal Server Error: /product_update/9/
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py", line 89, in product_update
+    return render(request, 'shop_app/product_update.html', {'form': form, 'message': message})
+                                                                                     ^^^^^^^
+UnboundLocalError: cannot access local variable 'message' where it is not associated with a value
+ERROR 2024-04-11 22:41:32,086 basehttp 15228 13124 "GET /product_update/9/ HTTP/1.1" 500 70472
+INFO 2024-04-11 22:41:32,651 autoreload 15228 12236 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-11 22:41:33,859 autoreload 14792 14536 Watching for file changes with StatReloader
+ERROR 2024-04-11 22:41:34,324 log 14792 3748 Internal Server Error: /product_update/9/
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py", line 89, in product_update
+    return render(request, 'shop_app/product_update.html', {'form': form, 'message': message})
+                                                                                     ^^^^^^^
+UnboundLocalError: cannot access local variable 'message' where it is not associated with a value
+ERROR 2024-04-11 22:41:34,330 basehttp 14792 3748 "GET /product_update/9/ HTTP/1.1" 500 70472
+INFO 2024-04-11 22:42:04,172 autoreload 14792 14536 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-11 22:42:05,319 autoreload 14028 13384 Watching for file changes with StatReloader
+INFO 2024-04-11 22:42:08,197 basehttp 14028 4924 "GET /product_update/9/ HTTP/1.1" 200 1641
+INFO 2024-04-11 22:43:17,160 basehttp 14028 4924 "POST /product_update/9/ HTTP/1.1" 200 1648
+INFO 2024-04-11 22:48:22,185 autoreload 14028 13384 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-11 22:48:23,758 autoreload 8124 1680 Watching for file changes with StatReloader
+INFO 2024-04-11 22:52:30,228 autoreload 8124 1680 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\myproject\settings.py changed, reloading.
+INFO 2024-04-11 22:52:31,515 autoreload 8276 2712 Watching for file changes with StatReloader
+INFO 2024-04-11 22:56:53,375 basehttp 8276 9388 "POST /product_update/9/ HTTP/1.1" 200 2253
+WARNING 2024-04-11 22:56:53,458 basehttp 8276 9464 "GET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1867
+WARNING 2024-04-11 22:56:53,459 basehttp 8276 9388 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 404 1852
+INFO 2024-04-11 22:57:10,605 basehttp 8276 14868 "GET /about/ HTTP/1.1" 200 1604
+WARNING 2024-04-11 22:57:10,917 basehttp 8276 12096 "GET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1867
+WARNING 2024-04-11 22:57:10,918 basehttp 8276 14868 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 404 1852
+INFO 2024-04-11 22:57:12,395 basehttp 8276 11508 "GET /about/ HTTP/1.1" 200 1604
+WARNING 2024-04-11 22:57:12,483 basehttp 8276 11508 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 404 1852
+WARNING 2024-04-11 22:57:12,486 basehttp 8276 4608 "GET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1867
+WARNING 2024-04-11 22:57:32,788 log 8276 14060 Not Found: /client_orders/5
+WARNING 2024-04-11 22:57:32,789 basehttp 8276 14060 "GET /client_orders/5 HTTP/1.1" 404 3256
+INFO 2024-04-11 22:57:52,167 basehttp 8276 14060 "GET /orders_client/8 HTTP/1.1" 301 0
+INFO 2024-04-11 22:57:52,222 basehttp 8276 9916 "GET /orders_client/8/ HTTP/1.1" 200 2552
+WARNING 2024-04-11 22:57:52,312 basehttp 8276 9916 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 404 1852
+WARNING 2024-04-11 22:57:52,315 basehttp 8276 7600 "GET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1867
+INFO 2024-04-11 22:58:32,442 basehttp 8276 244 "GET /orders_client/8/ HTTP/1.1" 200 2561
+WARNING 2024-04-11 22:58:32,511 basehttp 8276 244 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 404 1852
+WARNING 2024-04-11 22:58:32,513 basehttp 8276 11592 "GET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1867
+INFO 2024-04-11 22:58:52,486 basehttp 8276 15732 "GET /orders_client/8/ HTTP/1.1" 200 2552
+WARNING 2024-04-11 22:58:52,560 basehttp 8276 15732 "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 404 1852
+WARNING 2024-04-11 22:58:52,561 basehttp 8276 13576 "GET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1867
+WARNING 2024-04-11 23:02:05,165 log 8276 1420 Not Found: /products_update/11
+WARNING 2024-04-11 23:02:05,166 basehttp 8276 1420 "GET /products_update/11 HTTP/1.1" 404 3265
+INFO 2024-04-11 23:02:13,156 basehttp 8276 1420 "GET /product_update/11 HTTP/1.1" 301 0
+INFO 2024-04-11 23:02:13,207 basehttp 8276 1012 "GET /product_update/11/ HTTP/1.1" 200 1645
+INFO 2024-04-11 23:03:03,149 autoreload 8276 2712 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-11 23:03:04,472 autoreload 12792 14544 Watching for file changes with StatReloader
+ERROR 2024-04-11 23:03:04,917 log 12792 7320 Internal Server Error: /product_update/11/
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py", line 89, in product_update
+    return render(request, 'shop_app/product_update.html', {'form': form, 'message': message})
+                                                                                     ^^^^^^^
+UnboundLocalError: cannot access local variable 'message' where it is not associated with a value
+ERROR 2024-04-11 23:03:04,922 basehttp 12792 7320 "GET /product_update/11/ HTTP/1.1" 500 70520
+ERROR 2024-04-11 23:03:50,379 log 12792 7320 Internal Server Error: /product_update/11/
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py", line 89, in product_update
+    form = ProductForm(instance=product)
+                                         
+UnboundLocalError: cannot access local variable 'message' where it is not associated with a value
+ERROR 2024-04-11 23:03:50,387 basehttp 12792 7320 "GET /product_update/11/ HTTP/1.1" 500 70778
+INFO 2024-04-11 23:03:50,984 autoreload 12792 14544 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-11 23:03:52,158 autoreload 14184 13712 Watching for file changes with StatReloader
+INFO 2024-04-11 23:03:52,569 basehttp 14184 6920 "GET /product_update/11/ HTTP/1.1" 200 1605
+INFO 2024-04-11 23:04:04,976 basehttp 14184 6920 "POST /product_update/11/ HTTP/1.1" 200 1651
+INFO 2024-04-11 23:06:19,022 autoreload 5420 13556 Watching for file changes with StatReloader
+ERROR 2024-04-11 23:06:22,518 log 5420 12768 Internal Server Error: /product_update/11/
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\defaulttags.py", line 1034, in find_library
+    return parser.libraries[name]
+           ~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'bootstrap3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py", line 86, in product_update
+    return render(request, 'shop_app/product_update.html', {'form': form, 'message': message})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\defaulttags.py", line 1096, in load
+    lib = find_library(parser, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\defaulttags.py", line 1036, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'bootstrap3' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+ERROR 2024-04-11 23:06:22,546 basehttp 5420 12768 "POST /product_update/11/ HTTP/1.1" 500 177348
+INFO 2024-04-11 23:06:59,674 autoreload 5420 13556 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\myproject\settings.py changed, reloading.
+INFO 2024-04-11 23:07:01,017 autoreload 15528 13416 Watching for file changes with StatReloader
+INFO 2024-04-11 23:07:03,196 basehttp 15528 6064 "POST /product_update/11/ HTTP/1.1" 200 2139
+INFO 2024-04-11 23:09:14,610 basehttp 15528 6064 "POST /product_update/11/ HTTP/1.1" 200 3616
+INFO 2024-04-11 23:09:43,552 basehttp 15528 6064 "POST /product_update/11/ HTTP/1.1" 200 3625
+INFO 2024-04-11 23:10:46,143 basehttp 15528 6064 "POST /product_update/11/ HTTP/1.1" 200 3626
+INFO 2024-04-11 23:10:55,681 basehttp 15528 6064 "POST /product_update/11/ HTTP/1.1" 200 3585
+INFO 2024-04-11 23:11:13,890 basehttp 15528 6064 "POST /product_update/11/ HTTP/1.1" 200 3626
+INFO 2024-04-11 23:13:32,220 autoreload 15528 13416 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-11 23:13:33,694 autoreload 13632 1012 Watching for file changes with StatReloader
+INFO 2024-04-11 23:15:28,710 autoreload 13632 1012 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-11 23:15:30,353 autoreload 6820 10256 Watching for file changes with StatReloader
+INFO 2024-04-11 23:16:47,485 autoreload 6820 10256 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-11 23:16:48,899 autoreload 1876 10324 Watching for file changes with StatReloader
+INFO 2024-04-11 23:17:05,106 autoreload 1876 10324 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-11 23:17:06,357 autoreload 11692 9960 Watching for file changes with StatReloader
+ERROR 2024-04-11 23:18:09,026 log 11692 1420 Internal Server Error: /product_update/11/
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py", line 86, in product_update
+    messages.success(request, "Profile updated successfully!")
+    ^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'success'
+ERROR 2024-04-11 23:18:09,033 basehttp 11692 1420 "POST /product_update/11/ HTTP/1.1" 500 72324
+INFO 2024-04-11 23:20:34,293 autoreload 11692 9960 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-11 23:20:35,905 autoreload 1120 14152 Watching for file changes with StatReloader
+INFO 2024-04-11 23:21:31,333 basehttp 1120 1596 "POST /product_update/11/ HTTP/1.1" 200 3625
+INFO 2024-04-11 23:22:48,093 autoreload 1120 14152 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-11 23:22:49,394 autoreload 5320 10108 Watching for file changes with StatReloader
+INFO 2024-04-11 23:22:50,058 basehttp 5320 13088 "POST /product_update/11/ HTTP/1.1" 200 3585
+WARNING 2024-04-11 23:24:00,224 log 5320 13088 Not Found: /url/to/submit/
+WARNING 2024-04-11 23:24:00,225 basehttp 5320 13088 "POST /url/to/submit/ HTTP/1.1" 404 3254
+WARNING 2024-04-11 23:25:31,296 log 5320 13088 Not Found: /url/to/submit/
+WARNING 2024-04-11 23:25:31,298 basehttp 5320 13088 "POST /url/to/submit/ HTTP/1.1" 404 3254
+WARNING 2024-04-11 23:25:41,768 log 5320 13088 Not Found: /url/to/submit/
+WARNING 2024-04-11 23:25:41,769 basehttp 5320 13088 "POST /url/to/submit/ HTTP/1.1" 404 3254
+WARNING 2024-04-11 23:27:58,797 log 5320 13088 Not Found: /url/to/submit/
+WARNING 2024-04-11 23:27:58,800 basehttp 5320 13088 "POST /url/to/submit/ HTTP/1.1" 404 3254
+ERROR 2024-04-11 23:28:13,490 log 5320 13088 Internal Server Error: /product_update/11/
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py", line 91, in product_update
+    return render(request, 'shop_app/product_update.html', {'form': form, 'message': message})
+                                                                                     ^^^^^^^
+UnboundLocalError: cannot access local variable 'message' where it is not associated with a value
+ERROR 2024-04-11 23:28:13,494 basehttp 5320 13088 "GET /product_update/11/ HTTP/1.1" 500 70453
+INFO 2024-04-11 23:28:59,932 autoreload 5320 10108 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-11 23:29:01,309 autoreload 16300 4976 Watching for file changes with StatReloader
+INFO 2024-04-11 23:29:01,700 basehttp 16300 7728 "GET /product_update/11/ HTTP/1.1" 200 3498
+INFO 2024-04-11 23:29:15,510 basehttp 16300 7728 "POST /product_update/11/ HTTP/1.1" 200 3564
+INFO 2024-04-11 23:29:46,826 basehttp 16300 7728 "POST /product_update/11/ HTTP/1.1" 200 3962
+INFO 2024-04-11 23:30:54,722 autoreload 16300 4976 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-11 23:30:56,044 autoreload 8816 13184 Watching for file changes with StatReloader
+INFO 2024-04-11 23:31:57,742 basehttp 8816 12868 "POST /product_update/11/ HTTP/1.1" 200 4025
+INFO 2024-04-11 23:32:07,401 basehttp 8816 12868 "GET /product_update/3/ HTTP/1.1" 200 3499
+INFO 2024-04-11 23:33:09,549 autoreload 8816 13184 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\forms.py changed, reloading.
+INFO 2024-04-11 23:33:11,056 autoreload 15420 15784 Watching for file changes with StatReloader
+INFO 2024-04-11 23:34:35,790 autoreload 14056 8632 Watching for file changes with StatReloader
+INFO 2024-04-11 23:34:36,796 basehttp 14056 9484 "GET /product_update/3/ HTTP/1.1" 200 3499
+INFO 2024-04-11 23:37:02,445 autoreload 14056 8632 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\forms.py changed, reloading.
+INFO 2024-04-11 23:37:03,728 autoreload 5296 14384 Watching for file changes with StatReloader
+INFO 2024-04-11 23:37:04,094 basehttp 5296 16288 "GET /product_update/3/ HTTP/1.1" 200 3499
+INFO 2024-04-11 23:40:39,154 autoreload 5296 14384 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\forms.py changed, reloading.
+INFO 2024-04-11 23:40:40,435 autoreload 15228 5028 Watching for file changes with StatReloader
+INFO 2024-04-11 23:41:00,835 autoreload 15228 5028 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-11 23:41:02,181 autoreload 15696 10072 Watching for file changes with StatReloader
+INFO 2024-04-11 23:41:21,779 autoreload 15696 10072 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\forms.py changed, reloading.
+INFO 2024-04-11 23:41:23,092 autoreload 12244 6840 Watching for file changes with StatReloader
+INFO 2024-04-11 23:42:35,805 autoreload 12244 6840 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-11 23:42:37,258 autoreload 8348 3784 Watching for file changes with StatReloader
+INFO 2024-04-11 23:43:08,740 autoreload 8348 3784 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-11 23:43:10,116 autoreload 13256 2720 Watching for file changes with StatReloader
+INFO 2024-04-11 23:45:53,118 autoreload 13256 2720 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\urls.py changed, reloading.
+INFO 2024-04-11 23:45:54,485 autoreload 7144 14520 Watching for file changes with StatReloader
+INFO 2024-04-11 23:46:23,910 basehttp 7144 2400 "GET /create_product HTTP/1.1" 301 0
+INFO 2024-04-11 23:46:23,995 basehttp 7144 12384 "GET /create_product/ HTTP/1.1" 200 3546
+ERROR 2024-04-11 23:47:40,917 log 7144 12384 Internal Server Error: /create_product/
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: shop_app_product.date_of_addition
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py", line 108, in create_product
+    new_product.save()
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: shop_app_product.date_of_addition
+ERROR 2024-04-11 23:47:40,941 basehttp 7144 12384 "POST /create_product/ HTTP/1.1" 500 162637
+INFO 2024-04-11 23:48:47,232 autoreload 7144 14520 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\models.py changed, reloading.
+INFO 2024-04-11 23:48:48,755 autoreload 7264 13836 Watching for file changes with StatReloader
+INFO 2024-04-11 23:48:49,241 basehttp 7264 14720 "POST /create_product/ HTTP/1.1" 200 3546
+INFO 2024-04-11 23:49:18,401 basehttp 7264 14720 "POST /create_product/ HTTP/1.1" 200 3546
+INFO 2024-04-11 23:51:24,686 autoreload 7264 13836 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-11 23:51:25,908 autoreload 14532 14672 Watching for file changes with StatReloader
+INFO 2024-04-11 23:52:30,816 basehttp 14532 2904 "POST /create_product/ HTTP/1.1" 200 3754
+INFO 2024-04-11 23:53:53,438 autoreload 14532 14672 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-11 23:53:54,751 autoreload 12080 7304 Watching for file changes with StatReloader

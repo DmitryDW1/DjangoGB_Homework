@@ -1,9 +1,10 @@
 from datetime import datetime, timedelta
 import logging
 from django.http import HttpResponse
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import redirect, render, get_object_or_404
 from .models import Client, Order, Product
 from django.utils import timezone
+from .forms import ProductForm, AddProduct
 
 logger = logging.getLogger(__name__)
 
@@ -73,3 +74,40 @@ def products_period(request, client_id):
     }
     print(products_week)
     return render(request, 'shop_app/products_period.html', context)
+
+
+def product_update(request, product_id):
+    product = Product.objects.get(pk=product_id)
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES, instance=product)
+        if form.is_valid():
+            form.save()
+            message = f"ТОвар с ID {product_id} успешно обновлён."
+            return render(request, 'shop_app/product_update.html', {'form': form, 'message': message})
+    else:
+        form = ProductForm(instance=product)
+    
+    return render(request, 'shop_app/product_update.html', {'form': form})
+
+
+def create_product(request):
+    success_message = None
+    if request.method == 'POST':
+        form = AddProduct(request.POST)
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            description = form.cleaned_data['description']
+            price = form.cleaned_data['price']
+            quantity = form.cleaned_data['quantity']
+            photo = request.FILES.get('photo')
+            if photo:
+                new_product = Product(name=name, description=description, price=price, quantity=quantity, photo=photo)
+            else:
+                new_product = Product(name=name, description=description, price=price, quantity=quantity)
+            new_product.save()
+            message = f"Товар успешно создан с ID {new_product.pk}."
+            return render(request, 'shop_app/create_product.html', {'form': form, 'message': message})
+    form = AddProduct()
+    return render(request, 'shop_app/create_product.html', {'form': form})
+
+
