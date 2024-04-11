@@ -91,7 +91,6 @@ def product_update(request, product_id):
 
 
 def create_product(request):
-    success_message = None
     if request.method == 'POST':
         form = AddProduct(request.POST)
         if form.is_valid():

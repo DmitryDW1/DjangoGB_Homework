@@ -5303,3 +5303,12 @@ INFO 2024-04-11 23:51:25,908 autoreload 14532 14672 Watching for file changes wi
 INFO 2024-04-11 23:52:30,816 basehttp 14532 2904 "POST /create_product/ HTTP/1.1" 200 3754
 INFO 2024-04-11 23:53:53,438 autoreload 14532 14672 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
 INFO 2024-04-11 23:53:54,751 autoreload 12080 7304 Watching for file changes with StatReloader
+INFO 2024-04-11 23:56:40,455 autoreload 18408 12696 Watching for file changes with StatReloader
+INFO 2024-04-11 23:57:35,655 autoreload 11956 12188 Watching for file changes with StatReloader
+INFO 2024-04-11 23:57:59,317 autoreload 4772 10872 Watching for file changes with StatReloader
+INFO 2024-04-11 23:58:02,771 basehttp 4772 15796 "GET / HTTP/1.1" 200 1543
+INFO 2024-04-11 23:58:30,244 basehttp 4772 15796 "GET /create_product HTTP/1.1" 301 0
+INFO 2024-04-11 23:58:30,345 basehttp 4772 9840 "GET /create_product/ HTTP/1.1" 200 2601
+INFO 2024-04-11 23:59:43,178 basehttp 4772 9840 "POST /create_product/ HTTP/1.1" 200 2766
+INFO 2024-04-12 00:00:31,178 autoreload 4772 10872 C:\Users\DmitryDW\Documents\GeekBrains\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-12 00:00:32,086 autoreload 5036 9984 Watching for file changes with StatReloader
