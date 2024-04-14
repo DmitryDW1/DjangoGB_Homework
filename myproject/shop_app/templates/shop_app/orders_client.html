@@ -13,13 +13,17 @@
         ID заказа: {{ order.pk }}<br>
         ++++++++++++++++++++<br>
         {% for product in order.products_in_order.all %}
-            ID товара: {{ product.id }}<br>
-            Наименование: {{ product.name }}<br>
-            Описание: {{ product.description }}<br>
-            Цена: {{ product.price }}<br>
+        <div>ID товара: {{ product.id }}</div>
+        <div>Наименование: {{ product.name }}</div>
+        <div>Описание: {{ product.description }}</div>
+        <div>Цена: {{ product.price }}</div>
+            <div>Фото: 
+                {% if product.photo %}
+                 <div><img src={{ product.photo.url }} width=20% ></div>
+                {% endif %}
             ++++++++++++++++++++<br>
         {% endfor %}
-        Сумма заказа: {{ order.total_cost }}<br>
+        <div>Сумма заказа: {{ order.total_cost }}</div>
         ----------------------------------------------<br>
     {% endfor %}
     

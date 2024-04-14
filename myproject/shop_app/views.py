@@ -27,6 +27,29 @@ def list_clients(request):
         'clients': clients
         }
     return render(request, 'shop_app/list_clients.html', context)
+def get_product(request, product_id):
+    product = Product.objects.filter(pk=product_id).first()
+    context = {
+        'title': 'Выбранный товар',
+        'product': product
+    }
+    return render(request, 'shop_app/get_product.html', context)
+    
+def get_order(request, order_id):
+    order = Order.objects.filter(pk=order_id).first()
+    context = {
+        'title': 'Заказ',
+        'order': order,
+    }    
+    return render(request, 'shop_app/get_order.html', context)
+
+def list_products(request):
+    products = Product.objects.all()
+    context = {
+        'title': 'Список товаров',
+        'products': products
+        }
+    return render(request, 'shop_app/list_products.html', context)
 
 def orders_client(request, client_id):
     client = get_object_or_404(Client, pk=client_id)

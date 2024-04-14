@@ -16,14 +16,22 @@ class Client(models.Model):
                 \nAddres: {self.addres}\
                 \nDate registration: {self.date_reg}'
                 
-                
+
+class Category(models.Model):
+    name = models.CharField(max_length=50, null=True, blank=True)
+    
+    def __str__(self):
+        return self.name
+
+    
 class Product(models.Model):
+    category = models.ForeignKey(Category, default=1, null=True, blank=True, on_delete=models.CASCADE)
     name = models.TextField(max_length=50)
     description = models.TextField(max_length=500)
     price = models.DecimalField(decimal_places=2, max_digits=10)
     quantity = models.IntegerField(default=0)
     date_of_addition = models.DateField(default=datetime.now)
-    photo = models.ImageField(upload_to='product_photos/', blank=True, null=True)
+    photo = models.ImageField(upload_to='product_photos/', blank=True, null=True, default=None)
     
     def __str__(self) -> str:
         return f'ID: {self.id}\
@@ -35,7 +43,7 @@ class Product(models.Model):
                 
 
 class Order(models.Model):
-    customer = models.ForeignKey(Client, on_delete=models.CASCADE)
+    customer = models.ForeignKey(to=Client, on_delete=models.CASCADE, related_name='customer')
     products_in_order = models.ManyToManyField(Product, related_name='products')
     total_cost = models.DecimalField(decimal_places=2, max_digits=10, default=0)
     registration_date = models.DateField(auto_now_add=True)

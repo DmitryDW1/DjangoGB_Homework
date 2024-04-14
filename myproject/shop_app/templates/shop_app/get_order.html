@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock title %}
+
+{% block content %}
+    <p>{{ order.id }}</p>
+    {% for product in order.products_in_order.all %}
+        <div>ID товара: {{ product.id }}</div>
+        <div>Наименование: {{ product.name }}</div>
+        <div>Описание: {{ product.description }}</div>
+        <div>Цена: {{ product.price }}</div>
+            <div>Фото: 
+                {% if product.photo %}
+                <div><img src={{ product.photo.url }} width=20% ></div>
+                {% endif %}
+            ++++++++++++++++++++<br>
+    {% endfor %}
+{% endblock content %}

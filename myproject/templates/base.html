@@ -1,11 +1,13 @@
 <!DOCTYPE html>
+{% load bootstrap3 %}
 <html>
   <head>
-    {% load bootstrap3 %}
+    
     <script src="{% bootstrap_jquery_url %}"></script>
     {% bootstrap_javascript %}
     {% bootstrap_css %}
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}Сайт{% endblock %}</title>
     <style>
         body {
@@ -18,6 +20,7 @@
         h1 {color: #333;}
         p {color: #777;}
     </style>
+    {% if 'javascript_in_head'|bootstrap_setting %}{% bootstrap_javascript jquery=True %}{% endif %}
     <body>
   </head>
   <body>
@@ -26,6 +29,8 @@
     {% endblock %}
   </body>
   <footer>
-    <p>&copy; Все права защищены. 2024</p>
-    </footer>
+    <div class="container">
+      <p>&copy; Все права защищены. 2024</p>
+    </div>
+  </footer>
 </html>

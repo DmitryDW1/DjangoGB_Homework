@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock title %}
+
+{% block content %}
+    {% for product in products %}
+       <h3>Название товара: {{ product.name }}</h3>
+       <p >Цена: {{ product.price }}</p>
+       <p>Фото: 
+            {% if product.photo %}
+                <img src={{ product.photo.url }}>
+            {% endif %}        
+        </p>
+       ---------------------------------------------<br>
+    {% endfor %}
+{% endblock content %}
