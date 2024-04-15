@@ -7694,3 +7694,551 @@ INFO 2024-04-14 21:06:57,331 basehttp 11484 7664 "GET /get_order/1/ HTTP/1.1" 20
 INFO 2024-04-14 21:07:44,709 basehttp 11484 7664 "GET /get_order/2 HTTP/1.1" 301 0
 INFO 2024-04-14 21:07:44,762 basehttp 11484 12556 "GET /get_order/2/ HTTP/1.1" 200 2798
 INFO 2024-04-14 22:18:46,117 autoreload 18024 15552 Watching for file changes with StatReloader
+INFO 2024-04-15 18:18:18,825 autoreload 9712 1872 Watching for file changes with StatReloader
+INFO 2024-04-15 18:19:52,060 autoreload 12212 6076 Watching for file changes with StatReloader
+INFO 2024-04-15 18:20:09,735 basehttp 12212 11964 - Broken pipe from ('127.0.0.1', 53090)
+INFO 2024-04-15 18:20:09,736 basehttp 12212 8496 "GET / HTTP/1.1" 200 11471
+INFO 2024-04-15 18:20:09,891 basehttp 12212 8496 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2024-04-15 18:20:09,894 basehttp 12212 13492 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13578
+INFO 2024-04-15 18:20:10,051 basehttp 12212 8496 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2024-04-15 18:20:10,101 basehttp 12212 8496 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+WARNING 2024-04-15 18:20:12,707 log 12212 8496 Not Found: /favicon.ico
+WARNING 2024-04-15 18:20:12,708 basehttp 12212 8496 "GET /favicon.ico HTTP/1.1" 404 14138
+INFO 2024-04-15 18:26:29,059 basehttp 12212 10936 "GET /about/ HTTP/1.1" 200 11697
+INFO 2024-04-15 18:26:29,364 basehttp 12212 10936 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2024-04-15 18:26:29,368 basehttp 12212 12768 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2024-04-15 18:26:29,390 basehttp 12212 12768 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2024-04-15 18:26:29,442 basehttp 12212 12768 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2024-04-15 18:26:30,412 basehttp 12212 12768 "GET /admin HTTP/1.1" 301 0
+INFO 2024-04-15 18:26:30,488 basehttp 12212 10936 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-04-15 18:26:30,934 basehttp 12212 10936 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 14193
+INFO 2024-04-15 18:26:31,101 basehttp 12212 15156 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2024-04-15 18:26:31,104 basehttp 12212 11272 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2024-04-15 18:26:31,118 basehttp 12212 14852 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2024-04-15 18:26:31,129 basehttp 12212 6680 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2024-04-15 18:26:31,139 basehttp 12212 14736 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2024-04-15 18:26:31,202 basehttp 12212 15156 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2024-04-15 18:26:31,204 basehttp 12212 10936 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2024-04-15 18:26:43,929 basehttp 12212 15156 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-04-15 18:26:44,331 basehttp 12212 15156 "GET /admin/ HTTP/1.1" 200 21682
+INFO 2024-04-15 18:26:44,406 basehttp 12212 15156 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2024-04-15 18:26:44,454 basehttp 12212 15156 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2024-04-15 18:26:44,465 basehttp 12212 10936 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2024-04-15 18:26:48,090 basehttp 12212 10936 "GET /admin/shop_app/product/ HTTP/1.1" 200 157002
+INFO 2024-04-15 18:26:48,187 basehttp 12212 6680 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2024-04-15 18:26:48,234 basehttp 12212 10936 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+INFO 2024-04-15 18:26:48,244 basehttp 12212 14852 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2024-04-15 18:26:48,245 basehttp 12212 11272 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2024-04-15 18:26:48,309 basehttp 12212 10936 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2024-04-15 18:26:48,331 basehttp 12212 6680 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2024-04-15 18:26:48,341 basehttp 12212 11272 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2024-04-15 18:26:48,400 basehttp 12212 15156 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-15 18:26:48,409 basehttp 12212 10936 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2024-04-15 18:26:48,439 basehttp 12212 14736 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2024-04-15 18:26:48,531 basehttp 12212 14852 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2024-04-15 18:26:48,650 basehttp 12212 14736 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2024-04-15 18:26:48,685 basehttp 12212 14736 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2024-04-15 18:26:48,700 basehttp 12212 14852 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2024-04-15 18:26:48,780 basehttp 12212 14852 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2024-04-15 18:27:00,763 basehttp 12212 14852 "GET /admin/shop_app/product/?o=-1 HTTP/1.1" 200 169112
+INFO 2024-04-15 18:27:00,871 basehttp 12212 14852 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-15 18:27:09,004 basehttp 12212 14852 "GET /admin/shop_app/product/1001/change/?_changelist_filters=o%3D-1 HTTP/1.1" 200 25046
+INFO 2024-04-15 18:27:09,096 basehttp 12212 15156 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2024-04-15 18:27:09,117 basehttp 12212 14852 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2024-04-15 18:27:09,127 basehttp 12212 10936 "GET /static/admin/js/collapse.js HTTP/1.1" 200 1803
+INFO 2024-04-15 18:27:09,140 basehttp 12212 14736 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-15 18:27:09,173 basehttp 12212 14852 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2024-04-15 18:27:09,229 basehttp 12212 14736 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2024-04-15 18:28:03,090 basehttp 12212 14736 "POST /admin/shop_app/product/1001/change/?_changelist_filters=o%3D-1 HTTP/1.1" 302 0
+INFO 2024-04-15 18:28:03,458 basehttp 12212 14736 "GET /admin/shop_app/product/?o=-1 HTTP/1.1" 200 169634
+INFO 2024-04-15 18:28:03,580 basehttp 12212 14736 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-15 18:28:03,676 basehttp 12212 14736 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2024-04-15 18:28:03,798 basehttp 12212 14736 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2024-04-15 18:28:03,798 basehttp 12212 14852 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2024-04-15 18:28:03,821 basehttp 12212 14852 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2024-04-15 18:28:04,256 basehttp 12212 14852 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2024-04-15 18:28:15,643 basehttp 12212 14852 "GET /admin/shop_app/product/1001/change/?_changelist_filters=o%3D-1 HTTP/1.1" 200 25394
+INFO 2024-04-15 18:28:15,767 basehttp 12212 14852 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-15 18:30:04,488 basehttp 12212 14852 "GET /admin/shop_app/order/ HTTP/1.1" 200 35217
+INFO 2024-04-15 18:30:04,545 basehttp 12212 10936 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2024-04-15 18:30:04,554 basehttp 12212 14736 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2024-04-15 18:30:04,613 basehttp 12212 14852 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-15 18:30:04,676 basehttp 12212 14852 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2024-04-15 18:30:04,702 basehttp 12212 14852 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2024-04-15 19:04:17,822 autoreload 12212 6076 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-15 19:04:19,521 autoreload 10148 10384 Watching for file changes with StatReloader
+INFO 2024-04-15 19:04:39,509 autoreload 10148 10384 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-15 19:04:41,040 autoreload 2116 13136 Watching for file changes with StatReloader
+INFO 2024-04-15 19:04:57,631 autoreload 2116 13136 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-15 19:04:59,089 autoreload 388 6088 Watching for file changes with StatReloader
+INFO 2024-04-15 19:07:21,317 autoreload 388 6088 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\models.py changed, reloading.
+INFO 2024-04-15 19:07:22,950 autoreload 15128 15768 Watching for file changes with StatReloader
+INFO 2024-04-15 19:09:44,903 autoreload 15128 15768 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\urls.py changed, reloading.
+INFO 2024-04-15 19:09:46,260 autoreload 9436 6340 Watching for file changes with StatReloader
+INFO 2024-04-15 19:10:00,723 basehttp 9436 10980 "GET / HTTP/1.1" 200 11471
+INFO 2024-04-15 19:10:00,785 basehttp 9436 10980 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2024-04-15 19:10:00,786 basehttp 9436 6792 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2024-04-15 19:10:00,848 basehttp 9436 6792 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2024-04-15 19:10:00,887 basehttp 9436 6792 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+ERROR 2024-04-15 19:10:12,306 log 9436 6792 Internal Server Error: /db/
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py", line 137, in total_in_db
+    total = Product.objects.aggregate(Sum('quantity'))
+                                      ^^^
+NameError: name 'Sum' is not defined. Did you mean: 'sum'?
+ERROR 2024-04-15 19:10:12,383 basehttp 9436 6792 "GET /db/ HTTP/1.1" 500 79371
+INFO 2024-04-15 19:11:23,394 autoreload 9436 6340 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-15 19:11:24,861 autoreload 14132 15120 Watching for file changes with StatReloader
+ERROR 2024-04-15 19:11:27,823 log 14132 2084 Internal Server Error: /db/
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py", line 143, in total_in_db
+    return render(request, 'myapp6/total_count.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp6/total_count.html
+ERROR 2024-04-15 19:11:27,935 basehttp 14132 2084 "GET /db/ HTTP/1.1" 500 97174
+INFO 2024-04-15 19:13:42,223 autoreload 14132 15120 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py changed, reloading.
+INFO 2024-04-15 19:13:43,732 autoreload 12296 15744 Watching for file changes with StatReloader
+INFO 2024-04-15 19:13:46,137 basehttp 12296 3224 "GET /db/ HTTP/1.1" 200 11187
+INFO 2024-04-15 19:14:03,213 basehttp 12296 3224 "GET /db/ HTTP/1.1" 200 11630
+INFO 2024-04-15 19:14:05,034 basehttp 12296 3224 "GET /__debug__/render_panel/?store_id=50b19945ee924566999e75ee9794ab20&panel_id=ProfilingPanel HTTP/1.1" 200 36159
+INFO 2024-04-15 19:14:34,255 basehttp 12296 3224 "GET /view/ HTTP/1.1" 200 11615
+INFO 2024-04-15 19:14:59,663 basehttp 12296 3224 "GET /template/ HTTP/1.1" 200 11599
+INFO 2024-04-15 19:15:38,284 basehttp 12296 3224 "GET /list_products HTTP/1.1" 200 10876
+INFO 2024-04-15 19:15:38,354 basehttp 12296 1928 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2024-04-15 19:15:38,355 basehttp 12296 14412 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2024-04-15 19:15:38,356 basehttp 12296 1648 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2024-04-15 19:15:38,363 basehttp 12296 16020 "GET /static/debug_toolbar/js/redirect.js HTTP/1.1" 200 48
+INFO 2024-04-15 19:15:38,410 basehttp 12296 16020 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2024-04-15 19:15:42,059 basehttp 12296 16020 "GET /list_products/ HTTP/1.1" 200 219792
+INFO 2024-04-15 19:15:42,336 basehttp 12296 16020 "GET /media/product_photos/%D0%BA%D0%B0%D1%88%D0%B0.jpg HTTP/1.1" 200 27344
+ERROR 2024-04-15 19:15:42,456 log 12296 1928 Internal Server Error: /media/product_photos/вино_EELhjhI.jpg
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\middleware.py", line 58, in __call__
+    response = toolbar.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\timer.py", line 65, in process_request
+    return super().process_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\headers.py", line 46, in process_request
+    return super().process_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\staticfiles.py", line 114, in process_request
+    response = super().process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 1 more time]
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\redirects.py", line 17, in process_request
+    response = super().process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\profiling.py", line 148, in process_request
+    return self.profiler.runcall(super().process_request, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\AppData\Local\Programs\Python\Python312\Lib\cProfile.py", line 109, in runcall
+    self.enable()
+ValueError: Another profiling tool is already active
+ERROR 2024-04-15 19:15:42,484 log 12296 14412 Internal Server Error: /media/product_photos/хлеб_UjP7XQ0.jpg
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\middleware.py", line 58, in __call__
+    response = toolbar.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\timer.py", line 65, in process_request
+    return super().process_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\headers.py", line 46, in process_request
+    return super().process_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\staticfiles.py", line 114, in process_request
+    response = super().process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 1 more time]
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\redirects.py", line 17, in process_request
+    response = super().process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\profiling.py", line 148, in process_request
+    return self.profiler.runcall(super().process_request, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\AppData\Local\Programs\Python\Python312\Lib\cProfile.py", line 109, in runcall
+    self.enable()
+ValueError: Another profiling tool is already active
+ERROR 2024-04-15 19:15:42,569 basehttp 12296 14412 "GET /media/product_photos/%D1%85%D0%BB%D0%B5%D0%B1_UjP7XQ0.jpg HTTP/1.1" 500 145360
+ERROR 2024-04-15 19:15:42,522 basehttp 12296 1928 "GET /media/product_photos/%D0%B2%D0%B8%D0%BD%D0%BE_EELhjhI.jpg HTTP/1.1" 500 145360
+ERROR 2024-04-15 19:15:42,505 log 12296 1648 Internal Server Error: /media/product_photos/арбуз_lT2uFn9.jpg
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\middleware.py", line 58, in __call__
+    response = toolbar.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\timer.py", line 65, in process_request
+    return super().process_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\headers.py", line 46, in process_request
+    return super().process_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\staticfiles.py", line 114, in process_request
+    response = super().process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 1 more time]
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\redirects.py", line 17, in process_request
+    response = super().process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\__init__.py", line 204, in process_request
+    return self.get_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\debug_toolbar\panels\profiling.py", line 148, in process_request
+    return self.profiler.runcall(super().process_request, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\AppData\Local\Programs\Python\Python312\Lib\cProfile.py", line 109, in runcall
+    self.enable()
+ValueError: Another profiling tool is already active
+ERROR 2024-04-15 19:15:42,636 basehttp 12296 1648 "GET /media/product_photos/%D0%B0%D1%80%D0%B1%D1%83%D0%B7_lT2uFn9.jpg HTTP/1.1" 500 145503
+INFO 2024-04-15 19:19:07,917 basehttp 12296 16020 "GET / HTTP/1.1" 200 11913
+INFO 2024-04-15 19:19:13,476 basehttp 12296 16020 "GET /admin/ HTTP/1.1" 200 22300
+INFO 2024-04-15 19:19:17,111 basehttp 12296 16020 "GET /admin/shop_app/product/ HTTP/1.1" 200 157459
+INFO 2024-04-15 19:19:17,302 basehttp 12296 16020 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-15 19:19:23,244 basehttp 12296 16020 "GET /admin/shop_app/product/?o=-1 HTTP/1.1" 200 169677
+INFO 2024-04-15 19:19:23,397 basehttp 12296 16020 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-15 19:19:28,099 basehttp 12296 16020 "GET /media/product_photos/%D0%B2%D0%B8%D0%BD%D0%BE_EELhjhI.jpg HTTP/1.1" 200 193871
+INFO 2024-04-15 19:19:34,087 basehttp 12296 16020 "GET /admin/shop_app/product/?o=-1 HTTP/1.1" 200 169677
+INFO 2024-04-15 19:20:33,258 basehttp 12296 16020 "GET /admin/shop_app/product/1001/change/?_changelist_filters=o%3D-1 HTTP/1.1" 200 25838
+INFO 2024-04-15 19:20:33,434 basehttp 12296 16020 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-15 19:20:40,989 basehttp 12296 16020 "GET / HTTP/1.1" 200 11913
+INFO 2024-04-15 19:20:49,122 basehttp 12296 16020 "GET /get_product/2 HTTP/1.1" 200 10875
+INFO 2024-04-15 19:20:51,954 basehttp 12296 8316 "GET /get_product/2/ HTTP/1.1" 200 11718
+INFO 2024-04-15 19:20:52,060 basehttp 12296 8316 "GET /media/product_photos/%D0%B0%D1%80%D0%B1%D1%83%D0%B7_lT2uFn9.jpg HTTP/1.1" 200 59139
+INFO 2024-04-15 19:21:00,147 basehttp 12296 8316 "GET /get_product/1001/ HTTP/1.1" 200 11718
+INFO 2024-04-15 19:21:15,909 basehttp 12296 8316 "GET /list_products HTTP/1.1" 200 10875
+INFO 2024-04-15 19:21:15,986 basehttp 12296 12772 "GET /static/debug_toolbar/js/redirect.js HTTP/1.1" 304 0
+INFO 2024-04-15 19:21:15,997 basehttp 12296 11312 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2024-04-15 19:21:16,000 basehttp 12296 15524 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2024-04-15 19:21:16,001 basehttp 12296 4020 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2024-04-15 19:21:16,027 basehttp 12296 4020 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2024-04-15 19:21:19,855 basehttp 12296 4020 "GET /list_products/ HTTP/1.1" 200 218790
+INFO 2024-04-15 19:21:20,046 basehttp 12296 4020 "GET /media/product_photos/%D1%85%D0%BB%D0%B5%D0%B1_UjP7XQ0.jpg HTTP/1.1" 200 357024
+ERROR 2024-04-15 19:23:04,845 log 12296 4020 Internal Server Error: /list_products/
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\shop_app\views.py", line 53, in list_products
+    return render(request, 'shop_app/list_products.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\defaulttags.py", line 961, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' width=20%' from 'product.photo.url width=20%'
+ERROR 2024-04-15 19:23:05,019 basehttp 12296 4020 "GET /list_products/ HTTP/1.1" 500 238932
+INFO 2024-04-15 19:23:19,315 basehttp 12296 4020 "GET /list_products/ HTTP/1.1" 200 218886
+INFO 2024-04-15 19:23:19,417 basehttp 12296 4020 "GET /media/product_photos/%D0%BA%D0%B0%D1%88%D0%B0.jpg HTTP/1.1" 304 0
+INFO 2024-04-15 20:01:19,809 autoreload 12296 15744 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\myproject\settings.py changed, reloading.
+INFO 2024-04-15 20:01:21,278 autoreload 14368 13136 Watching for file changes with StatReloader
+ERROR 2024-04-15 20:01:29,520 exception 14368 9564 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2024-04-15 20:01:29,624 log 14368 9564 Bad Request: /
+WARNING 2024-04-15 20:01:29,625 basehttp 14368 9564 "GET / HTTP/1.1" 400 143
+ERROR 2024-04-15 20:01:36,486 exception 14368 2364 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2024-04-15 20:01:36,496 log 14368 2364 Bad Request: /
+WARNING 2024-04-15 20:01:36,496 basehttp 14368 2364 "GET / HTTP/1.1" 400 143
+ERROR 2024-04-15 20:01:41,108 exception 14368 6756 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2024-04-15 20:01:41,114 log 14368 6756 Bad Request: /admin/
+WARNING 2024-04-15 20:01:41,114 basehttp 14368 6756 "GET /admin/ HTTP/1.1" 400 143
+INFO 2024-04-15 20:02:09,561 autoreload 15344 8504 Watching for file changes with StatReloader
+ERROR 2024-04-15 20:02:14,661 exception 15344 10348 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2024-04-15 20:02:14,669 log 15344 10348 Bad Request: /
+WARNING 2024-04-15 20:02:14,669 basehttp 15344 10348 "GET / HTTP/1.1" 400 143
+ERROR 2024-04-15 20:02:15,466 exception 15344 14592 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2024-04-15 20:02:15,472 log 15344 14592 Bad Request: /
+WARNING 2024-04-15 20:02:15,473 basehttp 15344 14592 "GET / HTTP/1.1" 400 143
+INFO 2024-04-15 20:02:21,994 autoreload 15344 8504 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\myproject\settings.py changed, reloading.
+INFO 2024-04-15 20:02:23,350 autoreload 1644 15336 Watching for file changes with StatReloader
+ERROR 2024-04-15 20:02:24,640 exception 1644 8536 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2024-04-15 20:02:24,647 log 1644 8536 Bad Request: /
+WARNING 2024-04-15 20:02:24,648 basehttp 1644 8536 "GET / HTTP/1.1" 400 143
+ERROR 2024-04-15 20:02:25,564 exception 1644 8136 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\django_venv\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2024-04-15 20:02:25,571 log 1644 8136 Bad Request: /
+WARNING 2024-04-15 20:02:25,572 basehttp 1644 8136 "GET / HTTP/1.1" 400 143
+INFO 2024-04-15 20:03:07,991 autoreload 1644 15336 C:\Users\dmitrydw1\OneDrive\Documents\Repositories\DjangoGB_Homework\myproject\myproject\settings.py changed, reloading.

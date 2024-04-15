@@ -41,6 +41,11 @@ class Product(models.Model):
                 \nQuantity: {self.quantity}\
                 \nDate of addition: {self.date_of_addition}'
                 
+                
+    @property
+    def total_quantity(self):
+        return sum(product.quantity for product in Product.objects.all())
+
 
 class Order(models.Model):
     customer = models.ForeignKey(to=Client, on_delete=models.CASCADE, related_name='customer')

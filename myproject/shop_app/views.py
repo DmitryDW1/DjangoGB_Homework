@@ -5,6 +5,7 @@ from django.shortcuts import redirect, render, get_object_or_404
 from .models import Client, Order, Product
 from django.utils import timezone
 from .forms import ProductForm, AddProduct
+from django.db.models import Sum
 
 logger = logging.getLogger(__name__)
 
@@ -133,3 +134,28 @@ def create_product(request):
     return render(request, 'shop_app/create_product.html', {'form': form})
 
 
+def total_in_db(request):
+    total = Product.objects.aggregate(Sum('quantity'))
+    context = {
+        'title': 'Общее количество посчитано в базе данных',
+        'total': total,
+    }
+    return render(request, 'shop_app/total_count.html', context)
+
+
+def total_in_view(request):
+    products = Product.objects.all()
+    total = sum(product.quantity for product in products)
+    context = {
+        'title': 'Общее количество посчитано в представлении',
+        'total': total,
+    }
+    return render(request, 'shop_app/total_count.html', context)
+
+
+def total_in_template(request):
+    context = {
+        'title': 'Общее количество посчитано в шаблоне',
+        'products': Product,
+    }
+    return render(request, 'shop_app/total_count.html', context)
